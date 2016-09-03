@@ -1,4 +1,4 @@
-{% set version = "1.1.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: zarr
@@ -9,7 +9,7 @@ source:
   git_tag: v{{ version }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:

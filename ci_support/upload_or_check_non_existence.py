@@ -25,7 +25,7 @@ def built_distribution_already_exists(cli, meta, owner):
     if hasattr(conda_build, 'api'):
         build_config = conda_build.api.Config()
     else:
-        build_config = conda_build.config.config
+        build_config = conda_build.config
     fname = bldpkg_path(meta, build_config)
     try:
         dist_info = cli.distribution(owner, meta.name(), meta.version(),

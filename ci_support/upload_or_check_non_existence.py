@@ -21,7 +21,7 @@ def built_distribution_already_exists(cli, meta, owner):
 
     """
     distro_name = '{}/{}.tar.bz2'.format(conda.config.subdir, meta.dist())
-    fname = bldpkg_path(meta)
+    fname = bldpkg_path(meta, conda.config)
     try:
         dist_info = cli.distribution(owner, meta.name(), meta.version(),
                                      distro_name)

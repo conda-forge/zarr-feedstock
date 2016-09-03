@@ -10,6 +10,7 @@ import sys
 from binstar_client.utils import get_binstar
 import binstar_client.errors
 import conda.config
+import conda_build
 from conda_build.metadata import MetaData
 from conda_build.build import bldpkg_path
 
@@ -21,7 +22,11 @@ def built_distribution_already_exists(cli, meta, owner):
 
     """
     distro_name = '{}/{}.tar.bz2'.format(conda.config.subdir, meta.dist())
-    fname = bldpkg_path(meta, conda.config)
+    if hasattr(conda_build, 'api'):
+        build_config = conda_build.api.Config()
+    else:
+        build_config = conda_build.config.config
+    fname = bldpkg_path(meta, build_config)
     try:
         dist_info = cli.distribution(owner, meta.name(), meta.version(),
                                      distro_name)

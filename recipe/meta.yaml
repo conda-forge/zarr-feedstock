@@ -9,11 +9,12 @@ source:
   git_tag: v{{ version }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
+    - toolchain
     - python
     - cython
     - setuptools

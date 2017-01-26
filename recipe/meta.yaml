@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-v{{ version }}.tar.gz
+  fn: zarr-v{{ version }}.tar.gz
   url: https://pypi.io/packages/source/z/zarr/zarr-{{ version }}.tar.gz
   sha256: 2eb998752184a5f4976d65e643678bf866094220285ab51a926aa2ce9fc630a3
 

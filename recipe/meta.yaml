@@ -20,11 +20,11 @@ requirements:
     - toolchain
     - python
     - cython
-    - setuptools
-    - setuptools_scm
+    - setuptools >18.0
+    - setuptools_scm >1.5.4
   run:
     - python
-    - numpy
+    - numpy >=1.7
     - fasteners
 
 test:

@@ -37,7 +37,7 @@ test:
     - nosetests -v zarr
 
 about:
-  home: https://github.com/alimanfoo/zarr
+  home: https://github.com/zarr-developers/zarr
   license: MIT
   license_file: LICENSE
   summary: An implementation of chunked, compressed, N-dimensional arrays for Python.

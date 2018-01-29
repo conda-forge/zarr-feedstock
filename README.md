@@ -1,7 +1,7 @@
 About zarr
 ==========
 
-Home: https://github.com/alimanfoo/zarr
+Home: https://github.com/zarr-developers/zarr
 
 Package license: MIT
 

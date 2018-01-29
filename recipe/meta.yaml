@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.1.4" %}
-{% set sha256 = "2eb998752184a5f4976d65e643678bf866094220285ab51a926aa2ce9fc630a3" %}
+{% set version = "2.2.0rc1" %}
+{% set sha256 = "e9463c58b4a4c30fa71f15a3060558d2a71339d2b4348457012836707ea2f00a" %}
 
 package:
   name: {{ name|lower }}
@@ -13,31 +13,31 @@ source:
 
 build:
   number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
-    - toolchain
     - python
-    - cython
-    - setuptools
-    - setuptools_scm
+    - setuptools >18.0
+    - setuptools_scm >1.5.4
   run:
     - python
-    - numpy
+    - asciitree
+    - numpy >=1.7
     - fasteners
+    - numcodecs >=0.5.2
 
 test:
   requires:
-    - nose
+    - pytest
   imports:
     - zarr
-    - zarr.blosc
   commands:
-    - nosetests -v zarr
+    - pytest -v --pyargs zarr
 
 about:
-  home: https://github.com/alimanfoo/zarr
+  home: https://github.com/zarr-developers/zarr
   license: MIT
   license_file: LICENSE
   summary: An implementation of chunked, compressed, N-dimensional arrays for Python.

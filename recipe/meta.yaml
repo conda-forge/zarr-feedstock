@@ -24,7 +24,7 @@ requirements:
   run:
     - python
     - asciitree
-    - numpy >=1.7
+    - numpy >=1.7,<1.14
     - fasteners
     - numcodecs >=0.5.3
 

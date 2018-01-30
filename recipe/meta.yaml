@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -20,11 +20,11 @@ requirements:
     - toolchain
     - python
     - cython
-    - setuptools
-    - setuptools_scm
+    - setuptools >18.0
+    - setuptools_scm >1.5.4
   run:
     - python
-    - numpy
+    - numpy >=1.7
     - fasteners
 
 test:
@@ -37,7 +37,7 @@ test:
     - nosetests -v zarr
 
 about:
-  home: https://github.com/alimanfoo/zarr
+  home: https://github.com/zarr-developers/zarr
   license: MIT
   license_file: LICENSE
   summary: An implementation of chunked, compressed, N-dimensional arrays for Python.

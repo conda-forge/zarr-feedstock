@@ -14,9 +14,7 @@ Summary: An implementation of chunked, compressed, N-dimensional arrays for Pyth
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/zarr-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/zarr-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/zarr-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/zarr-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/zarr-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/zarr-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/zarr-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/zarr-feedstock)
 
 Current release info
 ====================

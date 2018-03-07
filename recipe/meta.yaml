@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.1.4" %}
-{% set sha256 = "2eb998752184a5f4976d65e643678bf866094220285ab51a926aa2ce9fc630a3" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "678eba19c4ba5821e8d0f64cc59eeaf9b86db5b2229836903687794756dce407" %}
 
 package:
   name: {{ name|lower }}
@@ -12,29 +12,29 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
+  noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
-    - toolchain
     - python
-    - cython
     - setuptools >18.0
     - setuptools_scm >1.5.4
   run:
     - python
+    - asciitree
     - numpy >=1.7
     - fasteners
+    - numcodecs >=0.5.3
 
 test:
   requires:
-    - nose
+    - pytest
   imports:
     - zarr
-    - zarr.blosc
   commands:
-    - nosetests -v zarr
+    - pytest -v --pyargs zarr
 
 about:
   home: https://github.com/zarr-developers/zarr

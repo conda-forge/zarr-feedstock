@@ -27,6 +27,7 @@ requirements:
     - numpy >=1.7
     - fasteners
     - numcodecs >=0.6.2
+    - pyosreplace        # [win and py<33]
 
 test:
   requires:

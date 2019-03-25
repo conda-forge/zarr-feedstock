@@ -31,7 +31,6 @@ requirements:
 
 test:
   requires:
-    - azure-storage-blob
     - pytest
   imports:
     - zarr

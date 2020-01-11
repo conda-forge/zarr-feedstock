@@ -14,21 +14,22 @@ source:
 build:
   number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  noarch: python
 
 requirements:
+  host:
+    - python >=3.5
   build:
     - python
     - pip
-    - setuptools >18.0
+    - setuptools >=38.6.0
     - setuptools_scm >1.5.4
   run:
-    - python
+    - python >=3.5
     - asciitree
     - numpy >=1.7
     - fasteners
-    - numcodecs >=0.6.2
-    - pyosreplace        # [win and py<33]
-    - scandir            # [py<35]
+    - numcodecs >=0.6.4
 
 test:
   requires:

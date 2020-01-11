@@ -17,13 +17,11 @@ build:
   noarch: python
 
 requirements:
-  build:
-    - python
+  host:
+    - python >=3.5
     - pip
     - setuptools >=38.6.0
     - setuptools_scm >1.5.4
-  host:
-    - python >=3.5
   run:
     - python >=3.5
     - asciitree

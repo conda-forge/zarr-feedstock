@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.8.0" %}
-{% set sha256 = "66bede4493c04c6dbfde6f98fd040bc6c6ae533f23ed07500236f0b4cf353006" %}
+{% set version = "2.8.1" %}
+{% set sha256 = "138e5f64bbaf7aece6da1f229b611a7a04742e15358dde49c6e9bae8404a3bf2" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 

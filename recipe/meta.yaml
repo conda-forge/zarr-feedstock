@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.8.2" %}
-{% set sha256 = "d86774190552ba1510106efc29a4221a124f72b6a834b5bfc58279bc73a8e05e" %}
+{% set version = "2.8.3" %}
+{% set sha256 = "8aece33269ba3ee2af9320aa528d5fe93f76c30e4ad7fdbfb604b1db3f0d779f" %}
 
 package:
   name: {{ name|lower }}

@@ -1,15 +1,13 @@
 {% set name = "zarr" %}
-{% set version = "2.9.2" %}
-{% set sha256 = "9568bfb4e924af7ba5ba0fd77fdd57e54bfb741f72c0b3d8c7c2c7a5eb301c69" %}
+{% set version = "2.9.2.dev" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  git_url: https://github.com/zarr-developers/zarr-python
+  git_rev: master
 
 build:
   number: 0

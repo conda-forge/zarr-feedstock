@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.9.3" %}
-{% set sha256 = "274d2c1642fab6b4ddd4e465df3cdd456a5f821ed9a425a075436b1d2110bf36" %}
+{% set version = "2.9.4" %}
+{% set sha256 = "5544c47bc2a35f8e8af58bee92378518018b484ba550e997759d18f40fa75719" %}
 
 package:
   name: {{ name|lower }}
@@ -32,6 +32,9 @@ requirements:
 test:
   requires:
     - pytest
+    # Needs `pkg_resources` in the tests
+    # xref: https://github.com/zarr-developers/zarr-python/pull/813
+    - setuptools
   imports:
     - zarr
   commands:

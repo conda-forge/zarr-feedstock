@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@joshmoore](https://github.com/joshmoore/)
 * [@jrbourbeau](https://github.com/jrbourbeau/)
 
-
-<!-- dummy commit to enable rerendering -->
-

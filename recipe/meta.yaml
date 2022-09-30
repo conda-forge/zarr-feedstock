@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -27,7 +27,7 @@ requirements:
     - asciitree
     - numpy >=1.7
     - fasteners
-    - numcodecs >=0.6.4
+    - numcodecs >=0.10.0
 
 test:
   requires:

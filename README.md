@@ -1,7 +1,7 @@
 About zarr
 ==========
 
-Home: https://github.com/zarr-developers/zarr
+Home: https://github.com/zarr-developers/zarr-python
 
 Package license: MIT
 

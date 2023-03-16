@@ -26,7 +26,7 @@ index a329f463f..d741c1783 100644
              # store the data - should be one-time operation
 -            fixdir.mkdir()
 -            with (fixdir / ".zattrs").open("w", encoding="utf-8") as f:
-+            testdir.mkdir()
++            testdir.mkdir(parents=True, exist_ok=True)
 +            with (testdir / ".zattrs").open("w", encoding="utf-8") as f:
                  f.write('{"foo": "た"}')
 -            with (fixdir / ".zgroup").open("w", encoding="utf-8") as f:

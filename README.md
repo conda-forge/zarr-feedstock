@@ -1,11 +1,11 @@
-About zarr
-==========
-
-Home: https://github.com/zarr-developers/zarr
-
-Package license: MIT
+About zarr-feedstock
+====================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/zarr-feedstock/blob/main/LICENSE.txt)
+
+Home: https://github.com/zarr-developers/zarr-python
+
+Package license: MIT
 
 Summary: An implementation of chunked, compressed, N-dimensional arrays for Python.
 

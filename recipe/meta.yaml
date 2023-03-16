@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.13.6" %}
-{% set sha256 = "f079444d5126db7ba5895a682797d86d02813f49b35854ee2d89c7503dc3677e" %}
+{% set version = "2.14.2" %}
+{% set sha256 = "68ec59b8ebdfc4fee5e32bd6c0ce273f72f7d4ed017454b45327c673c60907bc" %}
 
 package:
   name: {{ name|lower }}
@@ -10,6 +10,13 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    ###################################################################
+    # Apply test fixture fix from upstream.                           #
+    #                                                                 #
+    # xref: https://github.com/zarr-developers/zarr-python/pull/1364  #
+    ###################################################################
+    - patches/1364.patch
 
 build:
   number: 0

@@ -10,13 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    ###################################################################
-    # Apply test fixture fix from upstream.                           #
-    #                                                                 #
-    # xref: https://github.com/zarr-developers/zarr-python/pull/1364  #
-    ###################################################################
-    - patches/1364.patch
 
 build:
   number: 0

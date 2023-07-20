@@ -32,9 +32,9 @@ requirements:
 test:
   requires:
     - pytest
-    # Needs `packaging` in the tests
-    # xref: https://github.com/zarr-developers/zarr-python/pull/1450
-    - packaging
+    # Needs `pkg_resources` in the tests
+    # xref: https://github.com/zarr-developers/zarr-python/pull/813
+    - setuptools
   imports:
     - zarr
   commands:

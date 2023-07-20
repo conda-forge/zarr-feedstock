@@ -147,6 +147,7 @@ Feedstock Maintainers
 * [@alimanfoo](https://github.com/alimanfoo/)
 * [@grlee77](https://github.com/grlee77/)
 * [@jakirkham](https://github.com/jakirkham/)
+* [@jhamman](https://github.com/jhamman/)
 * [@joshmoore](https://github.com/joshmoore/)
 * [@jrbourbeau](https://github.com/jrbourbeau/)
 

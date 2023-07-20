@@ -12,20 +12,20 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.8
     - pip
-    - setuptools >=38.6.0
+    - setuptools >=64.0.0
     - setuptools_scm >1.5.4
   run:
-    - python >=3.5
+    - python >=3.8
     - asciitree
-    - numpy >=1.7
+    - numpy >=1.20
     - fasteners
     - numcodecs >=0.10.0
 
@@ -54,3 +54,4 @@ extra:
     - jakirkham
     - joshmoore
     - jrbourbeau
+    - jhamman

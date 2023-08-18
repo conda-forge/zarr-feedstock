@@ -54,6 +54,7 @@ about:
   license: MIT
   license_file: LICENSE.txt
   summary: An implementation of chunked, compressed, N-dimensional arrays for Python
+  doc_url: https://zarr.readthedocs.io/
 
 extra:
   recipe-maintainers:

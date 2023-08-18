@@ -53,7 +53,7 @@ about:
   home: https://github.com/zarr-developers/zarr-python
   license: MIT
   license_file: LICENSE.txt
-  summary: An implementation of chunked, compressed, N-dimensional arrays for Python.
+  summary: An implementation of chunked, compressed, N-dimensional arrays for Python
 
 extra:
   recipe-maintainers:

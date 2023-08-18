@@ -39,6 +39,7 @@ requirements:
 
 test:
   requires:
+    - pip
     - pytest
     # Needs `packaging` in the tests
     # xref: https://github.com/zarr-developers/zarr-python/pull/1450
@@ -46,6 +47,7 @@ test:
   imports:
     - zarr
   commands:
+    - pip check
     - pytest -v --pyargs zarr
 
 about:

@@ -7,7 +7,9 @@ Home: https://github.com/zarr-developers/zarr-python
 
 Package license: MIT
 
-Summary: An implementation of chunked, compressed, N-dimensional arrays for Python.
+Summary: An implementation of chunked, compressed, N-dimensional arrays for Python
+
+Documentation: https://zarr.readthedocs.io/
 
 Current build status
 ====================
@@ -150,4 +152,5 @@ Feedstock Maintainers
 * [@jhamman](https://github.com/jhamman/)
 * [@joshmoore](https://github.com/joshmoore/)
 * [@jrbourbeau](https://github.com/jrbourbeau/)
+* [@rabernat](https://github.com/rabernat/)
 

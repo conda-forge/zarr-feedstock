@@ -1,31 +1,30 @@
 {% set name = "zarr" %}
-{% set version = "2.16.0" %}
-{% set sha256 = "84e36b695bda0ecea52af9861271984cb22a5c864679907b7b9ba3f79b684f7e" %}
+{% set version = "2.16.1" %}
+{% set sha256 = "4276cf4b4a653431042cd53ff2282bc4d292a6842411e88529964504fb073286" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - python >=3.8
     - pip
     - setuptools >=64.0.0
-    - setuptools_scm >1.5.4
+    - setuptools-scm >1.5.4
   run:
     - python >=3.8
     - asciitree
-    - numpy >=1.20
+    - numpy >=1.20,!=1.21.0
     - fasteners
     - numcodecs >=0.10.0
   run_constrained:
@@ -39,6 +38,7 @@ requirements:
 
 test:
   requires:
+    - pip
     - pytest
     # Needs `packaging` in the tests
     # xref: https://github.com/zarr-developers/zarr-python/pull/1450
@@ -46,13 +46,15 @@ test:
   imports:
     - zarr
   commands:
+    - pip check
     - pytest -v --pyargs zarr
 
 about:
   home: https://github.com/zarr-developers/zarr-python
   license: MIT
   license_file: LICENSE.txt
-  summary: An implementation of chunked, compressed, N-dimensional arrays for Python.
+  summary: An implementation of chunked, compressed, N-dimensional arrays for Python
+  doc_url: https://zarr.readthedocs.io/
 
 extra:
   recipe-maintainers:
@@ -63,3 +65,4 @@ extra:
     - joshmoore
     - jrbourbeau
     - jhamman
+    - rabernat

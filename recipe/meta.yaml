@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.17.1" %}
-{% set sha256 = "564b3aa072122546fe69a0fa21736f466b20fad41754334b62619f088ce46261" %}
+{% set version = "2.17.2" %}
+{% set sha256 = "2cbaa6cb4e342d45152d4a7a4b2013c337fcd3a8e7bc98253560180de60552ce" %}
 
 package:
   name: {{ name|lower }}
@@ -17,14 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - setuptools >=64.0.0
     - setuptools-scm >1.5.4
   run:
-    - python >=3.8
+    - python >=3.9
     - asciitree
-    - numpy >=1.20,!=1.21.0
+    - numpy >=1.23
     - fasteners
     - numcodecs >=0.10.0
   run_constrained:

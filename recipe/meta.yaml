@@ -17,14 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - setuptools >=64.0.0
     - setuptools-scm >1.5.4
   run:
-    - python >=3.8
+    - python >=3.9
     - asciitree
-    - numpy >=1.20,!=1.21.0
+    - numpy >=1.23
     - fasteners
     - numcodecs >=0.10.0
   run_constrained:
@@ -66,3 +66,7 @@ extra:
     - jrbourbeau
     - jhamman
     - rabernat
+    - jni
+    - d-v-b
+    - martindurant
+    - normanrz

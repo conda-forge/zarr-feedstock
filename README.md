@@ -149,7 +149,6 @@ Feedstock Maintainers
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jhamman](https://github.com/jhamman/)
 * [@joshmoore](https://github.com/joshmoore/)
-* [@jrbourbeau](https://github.com/jrbourbeau/)
 * [@normanrz](https://github.com/normanrz/)
 * [@rabernat](https://github.com/rabernat/)
 

@@ -1,6 +1,6 @@
 {% set name = "zarr" %}
-{% set version = "2.17.2" %}
-{% set sha256 = "2cbaa6cb4e342d45152d4a7a4b2013c337fcd3a8e7bc98253560180de60552ce" %}
+{% set version = "2.18.0" %}
+{% set sha256 = "c3b7d2c85b8a42b0ad0ad268a36fb6886ca852098358c125c6b126a417e0a598" %}
 
 package:
   name: {{ name|lower }}
@@ -61,11 +61,7 @@ extra:
     - normanrz
     - martindurant
     - d-v-b
-    - alimanfoo
-    - Carreau
-    - grlee77
     - jakirkham
     - joshmoore
-    - jrbourbeau
     - jhamman
     - rabernat

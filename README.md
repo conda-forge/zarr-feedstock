@@ -147,13 +147,13 @@ Feedstock Maintainers
 
 * [@Carreau](https://github.com/Carreau/)
 * [@alimanfoo](https://github.com/alimanfoo/)
+* [@d-v-b](https://github.com/d-v-b/)
 * [@grlee77](https://github.com/grlee77/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jhamman](https://github.com/jhamman/)
 * [@joshmoore](https://github.com/joshmoore/)
 * [@jrbourbeau](https://github.com/jrbourbeau/)
+* [@martindurant](https://github.com/martindurant/)
+* [@normanrz](https://github.com/normanrz/)
 * [@rabernat](https://github.com/rabernat/)
-
-
-<!-- dummy commit to enable rerendering -->
 

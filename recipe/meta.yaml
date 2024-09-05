@@ -24,7 +24,8 @@ requirements:
   run:
     - python >=3.9
     - asciitree
-    - numpy >=1.23
+    # Just try to set an upper bound on numpy
+    - numpy >=1.23,<2.1.0a0
     - fasteners
     - numcodecs >=0.10.0
   run_constrained:

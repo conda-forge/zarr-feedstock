@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "zarr" %}
 {% set version = "2.18.3" %}
 {% set sha256 = "2580d8cb6dd84621771a10d31c4d777dca8a27706a1a89b29f42d2d37e2df5ce" %}
@@ -7,22 +8,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - setuptools >=64.0.0
     - setuptools-scm >1.5.4
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - asciitree
     - numpy >=1.24,<3.0
     - fasteners
@@ -43,6 +44,7 @@ test:
     # Needs `packaging` in the tests
     # xref: https://github.com/zarr-developers/zarr-python/pull/1450
     - packaging
+    - python {{ python_min }}
   imports:
     - zarr
   commands:

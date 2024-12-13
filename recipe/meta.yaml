@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "zarr" %}
 {% set version = "2.18.4" %}
 {% set sha256 = "37790ededd0683ae1abe6ff90aa16c22543b3436810060f53d72c15e910c24bb" %}

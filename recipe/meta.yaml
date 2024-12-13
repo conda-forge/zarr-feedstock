@@ -1,7 +1,7 @@
-{% set python_min = '3.10' %}
+{% set python_min = "3.11" %}
 {% set name = "zarr" %}
-{% set version = "2.18.3" %}
-{% set sha256 = "2580d8cb6dd84621771a10d31c4d777dca8a27706a1a89b29f42d2d37e2df5ce" %}
+{% set version = "2.18.4" %}
+{% set sha256 = "37790ededd0683ae1abe6ff90aa16c22543b3436810060f53d72c15e910c24bb" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,9 +25,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - asciitree
-    - numpy >=1.24,<3.0
+    - numpy >=1.24
     - fasteners
-    - numcodecs >=0.10.0
+    - numcodecs >=0.10.0,!=0.14.0,!=0.14.1
   run_constrained:
     # Add `zarr[jupyter]` dependencies to `run_constrained`.
     # That way the correct versions of these will be installed

@@ -39,6 +39,7 @@ test:
     - python {{ python_min }}
     - pytest
     - hypothesis
+    - botocore
   source_files:
     - tests
   imports:

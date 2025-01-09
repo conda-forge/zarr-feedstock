@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "zarr" %}
-{% set version = "2.18.4" %}
-{% set sha256 = "37790ededd0683ae1abe6ff90aa16c22543b3436810060f53d72c15e910c24bb" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "d491480e35d344125671d7300ddcd5fd86d5ec060480d79bd450d203a98b9cda" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/91/07/438aa4eb6e59688ce45fc5116f068bfb6d7af7347cb785172016f6de8f56/zarr-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:

@@ -44,7 +44,7 @@ test:
   imports:
     - zarr
   commands:
-    - pip chec
+    - pip check
     - pytest tests
 
 about:

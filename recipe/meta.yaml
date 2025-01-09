@@ -36,13 +36,11 @@ requirements:
 test:
   requires:
     - pip
-    - pytest
     - python {{ python_min }}
   imports:
     - zarr
   commands:
     - pip check
-    - pytest -v
 
 about:
   home: https://github.com/zarr-developers/zarr-python

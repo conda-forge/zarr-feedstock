@@ -38,6 +38,7 @@ test:
     - pip
     - python {{ python_min }}
     - pytest
+    - pytest-asyncio
     - hypothesis
     - botocore
   source_files:

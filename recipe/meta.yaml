@@ -42,7 +42,7 @@ test:
     - zarr
   commands:
     - pip check
-    - pytest -v --pyargs zarr
+    - pytest -v
 
 about:
   home: https://github.com/zarr-developers/zarr-python

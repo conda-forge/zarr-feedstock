@@ -20,8 +20,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=64.0.0
-    - setuptools-scm >1.5.4
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - packaging >=22.0

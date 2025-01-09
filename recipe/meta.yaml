@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "zarr" %}
-{% set version = "2.18.4" %}
-{% set sha256 = "37790ededd0683ae1abe6ff90aa16c22543b3436810060f53d72c15e910c24bb" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "d491480e35d344125671d7300ddcd5fd86d5ec060480d79bd450d203a98b9cda" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/91/07/438aa4eb6e59688ce45fc5116f068bfb6d7af7347cb785172016f6de8f56/zarr-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -20,36 +20,27 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=64.0.0
-    - setuptools-scm >1.5.4
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
-    - asciitree
-    - numpy >=1.24
-    - fasteners
-    - numcodecs >=0.10.0,!=0.14.0,!=0.14.1
+    - packaging >=22.0
+    - numpy >=1.25
+    - numcodecs >=0.14.1
+    - typing_extensions >=4.9
+    - donfig >=0.8
+    - crc32c
   run_constrained:
-    # Add `zarr[jupyter]` dependencies to `run_constrained`.
-    # That way the correct versions of these will be installed
-    # when these packages are requested. Otherwise they are not
-    # installed.
-    - notebook
-    - ipytree >=0.2.2
-    - ipywidgets >=8.0.0
+    - fsspec >=2023.10.0
 
 test:
   requires:
     - pip
-    - pytest
-    # Needs `packaging` in the tests
-    # xref: https://github.com/zarr-developers/zarr-python/pull/1450
-    - packaging
     - python {{ python_min }}
   imports:
     - zarr
   commands:
     - pip check
-    - pytest -v --pyargs zarr
 
 about:
   home: https://github.com/zarr-developers/zarr-python

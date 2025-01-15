@@ -41,6 +41,9 @@ test:
     - pytest-asyncio
     - hypothesis
     - botocore
+    - fsspec
+    - rich
+    - universal_pathlib
   source_files:
     - tests
     - pyproject.toml

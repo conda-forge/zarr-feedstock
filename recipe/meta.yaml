@@ -43,6 +43,7 @@ test:
     - botocore
   source_files:
     - tests
+    - pyproject.toml
   imports:
     - zarr
   commands:

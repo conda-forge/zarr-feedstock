@@ -42,6 +42,8 @@ test:
     - hypothesis
     - botocore
     - fsspec
+    - requests
+    - aiohttp    
     - rich
     - universal_pathlib
   source_files:

@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -37,10 +37,23 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    - pytest
+    - pytest-asyncio
+    - hypothesis
+    - botocore
+    - fsspec
+    - requests
+    - aiohttp    
+    - rich
+    - universal_pathlib
+  source_files:
+    - tests
+    - pyproject.toml
   imports:
     - zarr
   commands:
     - pip check
+    - pytest tests
 
 about:
   home: https://github.com/zarr-developers/zarr-python

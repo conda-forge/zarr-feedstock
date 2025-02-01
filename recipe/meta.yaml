@@ -1,7 +1,7 @@
 {% set python_min = "3.11" %}
 {% set name = "zarr" %}
-{% set version = "3.0.1" %}
-{% set sha256 = "033859c5603dc9c29e53af494ede24b42f1b761d2bb625466990a3b8a9afb792" %}
+{% set version = "3.0.2" %}
+{% set sha256 = "036b2dabffa9f0148cad57a7be6c69d9761f6b3b833b61b7d29c2ee8a836b46c" %}
 
 package:
   name: zarr
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -43,7 +43,7 @@ test:
     - botocore
     - fsspec
     - requests
-    - aiohttp    
+    - aiohttp
     - rich
     - universal_pathlib
   source_files:

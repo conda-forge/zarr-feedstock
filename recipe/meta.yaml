@@ -4,11 +4,11 @@
 {% set sha256 = "033859c5603dc9c29e53af494ede24b42f1b761d2bb625466990a3b8a9afb792" %}
 
 package:
-  name: {{ name|lower }}
+  name: zarr
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/8c/40/096ceb30b86ea829031662dfcd1d3014a7e1634aff2bc72f3680c97e084c/zarr-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/z/zarr/zarr-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:

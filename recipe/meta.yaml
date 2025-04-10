@@ -1,7 +1,7 @@
 {% set python_min = "3.11" %}
 {% set name = "zarr" %}
-{% set version = "2.18.4" %}
-{% set sha256 = "37790ededd0683ae1abe6ff90aa16c22543b3436810060f53d72c15e910c24bb" %}
+{% set version = "2.18.5" %}
+{% set sha256 = "c965bf25b5825fcfcf339bda6c329a56c90997df1232435e27b64aa136f142c7" %}
 
 package:
   name: {{ name|lower }}
@@ -20,14 +20,14 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools >=64.0.0
-    - setuptools-scm >1.5.4
+    - setuptools >=64
+    - setuptools-scm >8
   run:
     - python >={{ python_min }}
     - asciitree
     - numpy >=1.24
     - fasteners
-    - numcodecs >=0.10.0,!=0.14.0,!=0.14.1
+    - numcodecs >=0.10.0,!=0.14.0,!=0.14.1,<0.16.0a0
   run_constrained:
     # Add `zarr[jupyter]` dependencies to `run_constrained`.
     # That way the correct versions of these will be installed

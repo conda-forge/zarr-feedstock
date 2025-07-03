@@ -1,7 +1,7 @@
 {% set python_min = "3.11" %}
 {% set name = "zarr" %}
-{% set version = "3.0.9" %}
-{% set sha256 = "7635084efec55511d2940975528c42b8885634fb09e7ab75591a980122950d1e" %}
+{% set version = "3.0.10" %}
+{% set sha256 = "1fd1318ade646f692d8f604be0e0ad125675a061196e612e3f7a2cfa9e957d1c" %}
 
 package:
   name: zarr

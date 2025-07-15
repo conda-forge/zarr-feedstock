@@ -1,7 +1,7 @@
 {% set python_min = "3.11" %}
 {% set name = "zarr" %}
-{% set version = "3.0.10" %}
-{% set sha256 = "1fd1318ade646f692d8f604be0e0ad125675a061196e612e3f7a2cfa9e957d1c" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "ace5b111dc69d5315cb1655dfd0f816c5acf9798d2ad92f43b608a52c8c8ac2b" %}
 
 package:
   name: zarr
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - packaging >=22.0
-    - numpy >=1.25
+    - numpy >=1.26
     - numcodecs >=0.14
     - typing_extensions >=4.9
     - donfig >=0.8

@@ -35,6 +35,7 @@ requirements:
     - crc32c
   run_constraints:
     - fsspec >=2023.10.0
+    - obstore >=0.5.1
 
 tests:
   - python:

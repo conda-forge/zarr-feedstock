@@ -59,6 +59,7 @@ tests:
         - aiohttp
         - rich
         - universal_pathlib
+        - tomlkit
     script:
       - pytest tests
 

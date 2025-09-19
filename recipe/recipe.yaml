@@ -63,6 +63,7 @@ tests:
         - tomlkit
         - s3fs >=2023.10.0
         - obstore >=0.5.1
+        - numpydoc
     script:
       - pytest tests
 

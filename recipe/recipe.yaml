@@ -64,6 +64,7 @@ tests:
         - s3fs >=2023.10.0
         - obstore >=0.5.1
         - numpydoc
+        - pytest-benchmark
     script:
       - pytest tests
 

@@ -145,11 +145,11 @@ Feedstock Maintainers
 =====================
 
 * [@d-v-b](https://github.com/d-v-b/)
-* [@dstansby](https://github.com/dstansby/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@jhamman](https://github.com/jhamman/)
 * [@joshmoore](https://github.com/joshmoore/)
 * [@martindurant](https://github.com/martindurant/)
+* [@maxrjones](https://github.com/maxrjones/)
 * [@normanrz](https://github.com/normanrz/)
 * [@rabernat](https://github.com/rabernat/)
 

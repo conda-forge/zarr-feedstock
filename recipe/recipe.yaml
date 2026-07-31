@@ -3,8 +3,8 @@ schema_version: 1
 context:
   python_min: '3.12'
   name: zarr
-  version: "3.2.1"
-  sha256: 71565b738a0e7e8ed226f0516eba8c6bb53440ad7669a8c48ebb3534a161d035
+  version: 3.3.0
+  sha256: cd0c8cf738b4bb4807815bc1255acad5bdf1a7b7264b606c5a1bc0d0392a306b
 
 package:
   name: zarr
@@ -30,7 +30,7 @@ requirements:
     - packaging >=22.0
     - numpy >=2
     - numcodecs >=0.14
-    - typing_extensions >=4.13
+    - typing_extensions >=4.14
     - donfig >=0.8
     - google-crc32c >=1.5
   run_constraints:
